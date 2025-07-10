@@ -1,0 +1,23 @@
+n = 5
+for i in range(n):
+    # print leading spaces
+    for j in range(i, n):
+        print(" ", end=" ")
+
+    # print decreasing numbers from i+1 to 1
+    for j in range(i + 1, 0, -1):
+        print(j, end=" ")
+
+    # print increasing numbers from 2 to i+1
+    for j in range(2, i + 2):
+        print(j, end=" ")
+
+    print()  # new line after each row
+
+
+
+        1 
+      2 1 2 
+    3 2 1 2 3 
+  4 3 2 1 2 3 4 
+5 4 3 2 1 2 3 4 5 
