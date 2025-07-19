@@ -1,0 +1,54 @@
+1.1
+  2 6 
+  3 7 10
+  4 8 11 13
+  5 9 12 14 15
+
+PYTHON:
+n=int(input())
+for i in range(n):
+    p=i+1
+    t=n-1
+    for j in range(i+1):
+        print(p,end=" ")
+        p+=t
+        t-=1
+    print()
+
+JAVA
+import java.util.*;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int p,t;
+        for(int i=0;i<n;i++){
+            p=i+1;
+            t=n-1;
+            for(int j=0;j<i+1;j++){
+                System.out.print(p+" ");
+                p+=t;
+                t-=1;
+            }
+            System.out.println();
+        }
+    }
+}
+
+C:
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int p,t;
+    for(int i=0;i<n;i++){
+        p=i+1;
+        t=n-1;
+        for(int j=0;j<i+1;j++){
+            printf("%d ",p);
+            p+=t;
+            t-=1;
+        }
+        printf("\n");
+    }
+}
